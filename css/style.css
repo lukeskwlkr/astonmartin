@@ -607,7 +607,7 @@
                 padding: 0.75rem;
 
                 box-shadow: 0 -6px 20px rgba(0,0,0,0.15);
-                z-index: 9999;
+                z-index: 9000;
 
                 display: block;
             }
@@ -700,6 +700,7 @@
         margin: 0 -0.5rem;
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
         }
 
         /* Ogni campo */
@@ -707,7 +708,7 @@
         width: 100%;
         padding: 0 0.5rem;
         margin-bottom: 0.75rem;
-        border-radius: 6px;
+        border-radius: 8px;
         }
 
         /* Su viewport >= 768px rispetta le colonne 2 di HubSpot */
@@ -732,12 +733,13 @@
         width: 100%;
         margin-top: 0.15rem;
         padding: 0.55rem 0.9rem;       /* tipo py-2 px-3.5 */
-        border-radius: 2px;         /* pill come i btn */
-        border: 1px solid #d4d4d8;     /* zinc-300 */
+        border-radius: 6px;         /* pill come i btn */
+        border: 2px solid #d4d4d8;     /* zinc-300 */
         background-color: #f4f4f5;     /* zinc-100 */
         font-size: 0.875rem;           /* text-sm */
         color: #18181b;                /* zinc-900 */
         outline: none;
+        height: 36px;
         }
 
         /* Focus */
@@ -774,6 +776,7 @@
         line-height: 1.4;
         color: #52525b; /* zinc-600 */
         padding: 0 0.5rem;
+        margin: 0 !important;
         }
 
         /* ========= VALIDAZIONE ========= */
@@ -817,7 +820,6 @@
         align-items: center;
         justify-content: center;
         padding: 0.65rem 1.6rem;
-        border-radius: 6px;
         border: none;
         font-weight: 500;
         font-size: 0.875rem;
@@ -850,6 +852,9 @@
         }
 
         /* Modal Styles */
+        .modal{
+            z-index: 9999;
+        }
         .modal-content {
             border-radius: 12px;
             border: none;
@@ -865,8 +870,8 @@
         }
 
         .modal-header .modal-title {
-            font-size: 1.4rem;
-            font-weight: 500;
+            font-size: 1.2rem;
+            font-weight: 400;
 
         }
         
